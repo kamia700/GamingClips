@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCjqFzku_McjqKu9-te8G6QUsoRIPEyPTw",
+    authDomain: "gameclips-551fe.firebaseapp.com",
+    projectId: "gameclips-551fe",
+    storageBucket: "gameclips-551fe.appspot.com",
+    appId: "1:1022959649821:web:4fb5f60cda99f4283332f4"
+  }
+
 };
 
 /*
