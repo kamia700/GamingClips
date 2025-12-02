@@ -10,7 +10,7 @@ export class ManageComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private route: ActivatedRoute,
+    private route: ActivatedRoute, //service to gether info about the route the user is currently on
   ) {}
 
   ngOnInit(){

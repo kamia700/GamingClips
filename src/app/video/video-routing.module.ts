@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: 'manage',
     component: ManageComponent,
-    data: {
+    data: { //specify if this route requires auth inside
       authOnly: true
     }
   }, {
