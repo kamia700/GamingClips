@@ -3,22 +3,29 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ClipComponent } from './clip/clip.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
+// This array contains a list of objects with configuration settings for each root.
+// Each path is linked to a component that should be shown.
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
   },
   {
-    path: 'about',
+    path: 'about', //example.com/about
     component: AboutComponent
   },
   {
     path: 'clip/:id',
     component: ClipComponent
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
   }
 ];
-
+// The router will not become aware of our roots unless we pass them in as an argument to the forRoot function.
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
